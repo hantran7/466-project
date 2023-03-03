@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts/emailValidate.js"></script>
         <h1>The <b>BEST</b> Workout Split</h1>
         <h2>A.K.A. Han's Workout Split</h2>
     </head>
@@ -67,5 +68,17 @@
                 </div>
             </div>
           </div>
+          <form id="contactForm" onsubmit="feedbackFormValidate()">
+            <h3>
+                <label for="review">Leave a review:</label><br>
+            </h3>
+            <textarea id="review" name="review" rows="4" cols="50" ></textarea><br>
+            <h3>Rate this website on a scale of 1 to 5:</h3>
+            <input type="radio" value="Radio"><input type="radio" value="Radio"><input type="radio" value="Radio"><input type="radio" value="Radio"><input type="radio" value="Radio"><br>
+            <h3>E-mail Address:</h3>
+            <input type="text" name="email" size="40">
+            <input type="submit" value="Submit Review">
+            <input type="reset" value="Reset">
+        <form>
     </body>
 </html>

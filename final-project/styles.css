@@ -48,3 +48,7 @@ h1{
     border-style: dashed;
     border-color: bisque;
 }
+
+div.review{
+    justify-content: center;
+}
