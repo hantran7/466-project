@@ -10,12 +10,29 @@
         <script src="scripts/emailValidate.js"></script>
         <script src="scripts/toggleDarkMode.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(function(){
-                $("#navbar").load("navbar.html");
-            });
-        </script>
-        <div id="navbar"></div>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="services">
+                        <a href="/">Something</a>
+                        <ul class="dropdown">
+                            <li>something</li>
+                            <li>something</li>
+                            <li>something</li>
+                        </ul>
+                    </li>
+                    <li class="services">
+                        <a href="/">Display</a>
+                        <ul class="dropdown">
+                            <li><button onclick="toggleDarkMode()">Change to Dark Mode</button></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
         <div class="page-top">
             <h1>The <b>BEST</b> Workout Split</h1>
             <h2>A.K.A. Han's Workout Split</h2>
